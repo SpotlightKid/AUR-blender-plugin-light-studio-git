@@ -1,13 +1,15 @@
 pkgbase = blender-plugin-light-studio-git
 	pkgdesc = Blender addon adding studio lights setup.
-	pkgver = r172.42a68b0
+	pkgver = r188.17d84f6
 	pkgrel = 1
-	url = https://github.com/leomoon-studios/blender-light-studio
+	url = https://github.com/leomoon-studios/leomoon-lightstudio
 	arch = any
-	license = GPL
+	license = GPL-3.0-only
 	makedepends = git
-	source = light-studio::git+https://github.com/leomoon-studios/blender-light-studio.git
-	md5sums = SKIP
+	depends = blender
+	provides = blender-plugin-light-studio-git
+	conflicts = blender-plugin-light-studio-git
+	source = leomoon-lightstudio::git+https://github.com/leomoon-studios/leomoon-lightstudio.git
+	sha256sums = SKIP
 
 pkgname = blender-plugin-light-studio-git
-	depends = blender
